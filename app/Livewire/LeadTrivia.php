@@ -51,6 +51,7 @@ class LeadTrivia extends Component
                 'correct' => 'b',
             ],
         ];
+        shuffle($this->questions);
     }
 
     public function submitLead()
