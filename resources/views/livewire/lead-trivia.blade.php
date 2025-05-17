@@ -2,7 +2,7 @@
     @if ($step === 1)
         <div class="top-logo">
             <img src="{{ asset('assets/mobil-logo-TM-white.png') }}" alt="Logo" class="logo">
-            <p>Reto para vivir al máximo con Mobil</p>
+            <p>Reto para vivir al máximo con Mobil™</p>
         </div>
         <form wire:submit.prevent="submitLead" class="f2r-form">
             <input type="text" wire:model="nombre" placeholder="Nombre" class="f2r-input" required>
