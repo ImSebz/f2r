@@ -24,7 +24,7 @@ class LeadTrivia extends Component
     {
         $this->questions = [
             [
-                'question' => '¿Cuál de estas es una propiedad del aceite Mobil 1 Racing™ 4T 10W-40 / 15W-50?',
+                'question' => '¿Cuál de estas es una propiedad del lubricante Mobil 1 Racing™ 4T 10W-40 / 15W-50?',
                 'options' => [
                     'a' => 'Ayuda a prolongar la vida del motor.',
                     'b' => 'Son lubricantes para motores bicilíndricos o en forma de V',
@@ -34,7 +34,7 @@ class LeadTrivia extends Component
                 'correct' => 'a',
             ],
             [
-                'question' => '¿Cuál de estas NO una propiedad del aceite Mobil Super™ Moto 4T MAX 10W-40?',
+                'question' => '¿Cuál de estas NO una propiedad del lubricante Mobil Super™ Moto 4T MAX 10W-40?',
                 'options' => [
                     'a' => 'Es un lubricante mineral con tecnología premium para motocicletas de 4 tiempos.',
                     'b' => 'Protege el embrague y la transmisión Minimiza el ruido y vibraciones.',
@@ -44,7 +44,7 @@ class LeadTrivia extends Component
                 'correct' => 'a',
             ],
             [
-                'question' => '¿Cuál de estas NO es una propiedad del aceite Mobil Super™ Moto 4T MX 10W-30?',
+                'question' => '¿Cuál de estas NO es una propiedad del lubricante Mobil Super™ Moto 4T MX 10W-30?',
                 'options' => [
                     'a' => 'Ahorro en el consumo de combustible.',
                     'b' => 'Es un lubricante semisintético para motocicletas de dos tiempos.',
@@ -54,7 +54,7 @@ class LeadTrivia extends Component
                 'correct' => 'b',
             ],
             [
-                'question' => '¿Cuál de estas NO es una propiedad del aceite Mobil Super™ Moto Scooter 4T MX 10W-40?',
+                'question' => '¿Cuál de estas NO es una propiedad del lubricante Mobil Super™ Moto Scooter 4T MX 10W-40?',
                 'options' => [
                     'a' => 'Reduce la fricción logrando una conducción confortable.',
                     'b' => 'Es un lubricante con tecnología sintética recomendada para motos eléctricas.',
@@ -64,7 +64,7 @@ class LeadTrivia extends Component
                 'correct' => 'b',
             ],
             [
-                'question' => '¿Cuál de estas es una propiedad del aceite Mobil Super™ Moto 4T MX 15W-50?',
+                'question' => '¿Cuál de estas es una propiedad del lubricante Mobil Super™ Moto 4T MX 15W-50?',
                 'options' => [
                     'a' => 'Protección a altas temperaturas gracias a la molécula anti-desgaste termo activada.',
                     'b' => 'Con tecnología “clean engine” que ayuda a la limpieza del motor.',
