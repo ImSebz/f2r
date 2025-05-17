@@ -24,54 +24,59 @@ class LeadTrivia extends Component
     {
         $this->questions = [
             [
-                'question' => '¿Cuál de estas es una propiedad del lubricante Mobil 1 Racing™ 4T 10W-40 / 15W-50?',
+                'question' => 'Moteros, ¿qué representa la marca Mobil™ en el mundo?',
                 'options' => [
-                    'a' => 'Ayuda a prolongar la vida del motor.',
-                    'b' => 'Son lubricantes para motores bicilíndricos o en forma de V',
-                    'c' => 'Vienen diluidos para facilitar su mezcla al agregarlo al combustible.',
+                    'a' => 'Líder en aceites sintéticos',
+                    'b' => 'Marca número 1 en Colombia',
+                    'c' => 'Desempeño para vivir al máximo',
+                    'd' => 'Todas las anteriores',
                 ],
                 'category' => 'mobil1',
+                'correct' => 'd',
+            ],
+            [
+                'question' => 'Selecciona uno de los beneficios del lubricante Mobil Super™ Moto Scooter MX 10W-40',
+                'options' => [
+                    'a' => 'Protección a altas temperaturas',
+                    'b' => 'Aceleración en terrenos montañosos de 0 a 100 KM en 5 segundos.',
+                    'c' => 'Previene el desgaste de los frenos',
+                    'd' => 'Ayuda a prevenir caídas',
+                ],
+                'category' => 'mobilsupermotonaranja',
                 'correct' => 'a',
             ],
             [
-                'question' => '¿Cuál de estas NO una propiedad del lubricante Mobil Super™ Moto 4T MAX 10W-40?',
+                'question' => 'Selecciona cuál de las siguientes opciones es parte de la molécula del lubricante Mobil Super™ Moto MX 10W-30',
                 'options' => [
-                    'a' => 'Es un lubricante mineral con tecnología premium para motocicletas de 4 tiempos.',
-                    'b' => 'Protege el embrague y la transmisión Minimiza el ruido y vibraciones.',
-                    'c' => 'Compatible con motocicletas con tecnologías Euro 3 y anteriores.',
+                    'a' => 'Proporciona estabilidad al andar en pistas mojadas',
+                    'b' => 'Ayuda en el frenado de la moto',
+                    'c' => 'Ahorra combustible',
+                    'd' => 'Todas las anteriores',
+                ],
+                'category' => 'mobilsupermoto',
+                'correct' => 'c',
+            ],
+            [
+                'question' => 'Sabías que el lubricante Mobil Super™ Moto MX 10W-40 tiene una molécula activa única, ¿cuál es su molécula y su beneficio?',
+                'options' => [
+                    'a' => 'Molécula antidesgaste termoactivada con excelente protección a altas temperaturas',
+                    'b' => 'Previene el desgaste de los frenos',
+                    'c' => 'Aceleración de cero a 10km en 5 segundos',
+                    'd' => 'Ayuda a prevenir caídas',
                 ],
                 'category' => 'mobilsuper',
                 'correct' => 'a',
             ],
             [
-                'question' => '¿Cuál de estas NO es una propiedad del lubricante Mobil Super™ Moto 4T MX 10W-30?',
+                'question' => 'Selecciona un beneficio de la molécula activa del lubricante Mobil Super™ Moto MX 15W-50',
                 'options' => [
-                    'a' => 'Ahorro en el consumo de combustible.',
-                    'b' => 'Es un lubricante semisintético para motocicletas de dos tiempos.',
-                    'c' => 'Protege contra el desgaste y la corrosión.',
-                ],
-                'category' => 'mobilsupermoto',
-                'correct' => 'b',
-            ],
-            [
-                'question' => '¿Cuál de estas NO es una propiedad del lubricante Mobil Super™ Moto Scooter 4T MX 10W-40?',
-                'options' => [
-                    'a' => 'Reduce la fricción logrando una conducción confortable.',
-                    'b' => 'Es un lubricante con tecnología sintética recomendada para motos eléctricas.',
-                    'c' => 'Protege contra el desgaste y la corrosión.',
-                ],
-                'category' => 'mobilsupermotonaranja',
-                'correct' => 'b',
-            ],
-            [
-                'question' => '¿Cuál de estas es una propiedad del lubricante Mobil Super™ Moto 4T MX 15W-50?',
-                'options' => [
-                    'a' => 'Protección a altas temperaturas gracias a la molécula anti-desgaste termo activada.',
-                    'b' => 'Con tecnología “clean engine” que ayuda a la limpieza del motor.',
-                    'c' => 'Combina aceites minerales con un robusto sistema de aditivos para mayor desempeño en el motor.',
+                    'a' => 'Mejor agarre en terrenos lluviosos',
+                    'b' => 'Ahorra combustible',
+                    'c' => 'Previene el desgaste de los neumáticos',
+                    'd' => 'Molécula antidesgaste termoactivada con excelente protección a altas temperaturas',
                 ],
                 'category' => 'mobilsupermotoroja',
-                'correct' => 'a',
+                'correct' => 'd',
             ],
         ];
         shuffle($this->questions);
