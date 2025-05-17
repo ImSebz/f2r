@@ -26,19 +26,19 @@ class LeadTrivia extends Component
     {
         $this->questions = [
             [
-                'question' => '¿Cuál de estas es una propiedad del aceite Mobil 1 Racing 4T 10W-40 / 15W-50?',
+                'question' => '¿Cuál de estas es una propiedad del aceite Mobil 1 Racing™ 4T 10W-40 / 15W-50?',
                 'options' => [
                     'a' => 'Ayuda a prolongar la vida del motor.',
-                    'b' => 'Sobrecalienta el motor de tu moto.',
-                    'c' => 'Sirve para camiones.',
+                    'b' => 'Son lubricantes para motores bicilíndricos o en forma de V',
+                    'c' => 'Vienen diluidos para facilitar su mezcla al agregarlo al combustible.',
                 ],
                 'category' => 'mobil1',
                 'correct' => 'a',
             ],
             [
-                'question' => '¿Cuál de estas NO una propiedad del aceite Mobil Super Moto 4T MAX 10W-40?',
+                'question' => '¿Cuál de estas NO una propiedad del aceite Mobil Super™ Moto 4T MAX 10W-40?',
                 'options' => [
-                    'a' => 'Se debe cambiar cada 250 kilómetros.',
+                    'a' => 'Es un lubricante mineral con tecnología premium para motocicletas de 4 tiempos.',
                     'b' => 'Protege el embrague y la transmisión Minimiza el ruido y vibraciones.',
                     'c' => 'Compatible con motocicletas con tecnologías Euro 3 y anteriores.',
                 ],
@@ -46,31 +46,31 @@ class LeadTrivia extends Component
                 'correct' => 'a',
             ],
             [
-                'question' => '¿Cuál de estas NO es una propiedad del aceite Mobil Super Moto 4T MX 10W-30?',
+                'question' => '¿Cuál de estas NO es una propiedad del aceite Mobil Super™ Moto 4T MX 10W-30?',
                 'options' => [
                     'a' => 'Ahorro en el consumo de combustible.',
-                    'b' => 'Lubrica mejor si lo mezclas con gasolina.',
+                    'b' => 'Es un lubricante semisintético para motocicletas de dos tiempos.',
                     'c' => 'Protege contra el desgaste y la corrosión.',
                 ],
                 'category' => 'mobilsupermoto',
                 'correct' => 'b',
             ],
             [
-                'question' => '¿Cuál de estas NO es una propiedad del aceite Mobil Super Moto 4T MX 10W-40?',
+                'question' => '¿Cuál de estas NO es una propiedad del aceite Mobil Super™ Moto Scooter 4T MX 10W-40?',
                 'options' => [
                     'a' => 'Reduce la fricción logrando una conducción confortable.',
-                    'b' => 'Sobrecalienta el motor de tu moto.',
+                    'b' => 'Es un lubricante con tecnología sintética recomendada para motos eléctricas.',
                     'c' => 'Protege contra el desgaste y la corrosión.',
                 ],
                 'category' => 'mobilsupermotonaranja',
                 'correct' => 'b',
             ],
             [
-                'question' => '¿Cuál de estas es una propiedad del aceite Mobil Super Moto 4T MX 15W-50?',
+                'question' => '¿Cuál de estas es una propiedad del aceite Mobil Super™ Moto 4T MX 15W-50?',
                 'options' => [
-                    'a' => 'Compatible con motocicletas con tecnologías Euro 3 y anteriores.',
-                    'b' => 'Sobrecalienta el motor de tu moto.',
-                    'c' => 'Recomendado para bicicletas.',
+                    'a' => 'Protección a altas temperaturas gracias a la molécula anti-desgaste termo activada.',
+                    'b' => 'Con tecnología “clean engine” que ayuda a la limpieza del motor.',
+                    'c' => 'Combina aceites minerales con un robusto sistema de aditivos para mayor desempeño en el motor.',
                 ],
                 'category' => 'mobilsupermotoroja',
                 'correct' => 'a',

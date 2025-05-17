@@ -1,7 +1,7 @@
 <div class="f2r-container">
     @if ($step === 1)
         <div class="top-logo">
-            <img src="{{ asset('assets/mobil-logo.png') }}" alt="Logo" class="logo">
+            <img src="{{ asset('assets/mobil-logo-TM-white.png') }}" alt="Logo" class="logo">
             <p>Reto para vivir al máximo con Mobil</p>
         </div>
         <form wire:submit.prevent="submitLead" class="f2r-form">

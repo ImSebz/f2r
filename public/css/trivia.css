@@ -19,10 +19,9 @@ body {
 
 .f2r-container {
     min-height: 100vh;
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 24px 8px;
     background-image: url('../assets/bg.png');
@@ -31,13 +30,13 @@ body {
 }
 
 .top-logo {
-    position: absolute;
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 170px;
+    margin-top: 200px;
+    margin-bottom: 100px;
 }
 
 .top-logo img {
@@ -50,7 +49,8 @@ body {
     width: 90%;
     color: #fff;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .f2r-form {
@@ -102,6 +102,7 @@ body {
     margin-bottom: 10px;
     width: 100%;
     font-weight: 500;
+    padding: 15px;
 }
 
 .f2r-btn-option:hover {
@@ -109,10 +110,11 @@ body {
 }
 
 .f2r-question-block {
+    margin-top: 25%;
     padding: 32px 24px;
     border-radius: 16px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.5);
-    width: 80%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,12 +143,12 @@ body {
 }
 
 .f2r-question-text {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     margin-bottom: 24px;
     text-align: center;
     font-weight: bold;
     color: #000;
-    margin-top: -120px;
+    margin-top: -125px;
 }
 
 .f2r-options {
