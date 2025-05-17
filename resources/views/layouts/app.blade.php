@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Trivia</title>
+    <title>F2R</title>
     <link rel="stylesheet" href="{{ asset('css/trivia.css') }}">
     @livewireStyles
 </head>

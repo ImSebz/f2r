@@ -26,29 +26,54 @@ class LeadTrivia extends Component
     {
         $this->questions = [
             [
-                'question' => '¿Cuál es la capital de Francia?',
-                'options' => ['a' => 'París', 'b' => 'Madrid', 'c' => 'Roma'],
+                'question' => '¿Cuál de estas es una propiedad del aceite Mobil 1 Racing 4T 10W-40 / 15W-50?',
+                'options' => [
+                    'a' => 'Ayuda a prolongar la vida del motor.',
+                    'b' => 'Sobrecalienta el motor de tu moto.',
+                    'c' => 'Sirve para camiones.',
+                ],
+                'category' => 'mobil1',
                 'correct' => 'a',
             ],
             [
-                'question' => '¿Cuánto es 2 + 2?',
-                'options' => ['a' => '3', 'b' => '4', 'c' => '5'],
-                'correct' => 'b',
-            ],
-            [
-                'question' => '¿Cuál es el océano más grande?',
-                'options' => ['a' => 'Atlántico', 'b' => 'Índico', 'c' => 'Pacífico'],
-                'correct' => 'c',
-            ],
-            [
-                'question' => '¿Quién escribió "Cien años de soledad"?',
-                'options' => ['a' => 'Gabriel García Márquez', 'b' => 'Mario Vargas Llosa', 'c' => 'Julio Cortázar'],
+                'question' => '¿Cuál de estas NO una propiedad del aceite Mobil Super Moto 4T MAX 10W-40?',
+                'options' => [
+                    'a' => 'Se debe cambiar cada 250 kilómetros.',
+                    'b' => 'Protege el embrague y la transmisión Minimiza el ruido y vibraciones.',
+                    'c' => 'Compatible con motocicletas con tecnologías Euro 3 y anteriores.',
+                ],
+                'category' => 'mobilsuper',
                 'correct' => 'a',
             ],
             [
-                'question' => '¿Cuál es el planeta más cercano al sol?',
-                'options' => ['a' => 'Venus', 'b' => 'Mercurio', 'c' => 'Marte'],
+                'question' => '¿Cuál de estas NO es una propiedad del aceite Mobil Super Moto 4T MX 10W-30?',
+                'options' => [
+                    'a' => 'Ahorro en el consumo de combustible.',
+                    'b' => 'Lubrica mejor si lo mezclas con gasolina.',
+                    'c' => 'Protege contra el desgaste y la corrosión.',
+                ],
+                'category' => 'mobilsupermoto',
                 'correct' => 'b',
+            ],
+            [
+                'question' => '¿Cuál de estas NO es una propiedad del aceite Mobil Super Moto 4T MX 10W-40?',
+                'options' => [
+                    'a' => 'Reduce la fricción logrando una conducción confortable.',
+                    'b' => 'Sobrecalienta el motor de tu moto.',
+                    'c' => 'Protege contra el desgaste y la corrosión.',
+                ],
+                'category' => 'mobilsupermotonaranja',
+                'correct' => 'b',
+            ],
+            [
+                'question' => '¿Cuál de estas es una propiedad del aceite Mobil Super Moto 4T MX 15W-50?',
+                'options' => [
+                    'a' => 'Compatible con motocicletas con tecnologías Euro 3 y anteriores.',
+                    'b' => 'Sobrecalienta el motor de tu moto.',
+                    'c' => 'Recomendado para bicicletas.',
+                ],
+                'category' => 'mobilsupermotoroja',
+                'correct' => 'a',
             ],
         ];
         shuffle($this->questions);

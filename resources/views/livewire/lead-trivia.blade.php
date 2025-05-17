@@ -1,36 +1,44 @@
-{{-- filepath: resources/views/livewire/lead-trivia.blade.php --}}
-<div class="max-w-md mx-auto mt-10">
-    @if($step === 1)
-        <form wire:submit.prevent="submitLead" class="space-y-4">
-            <input type="text" wire:model="nombre" placeholder="Nombre" class="block w-full border rounded p-2" required>
-            <input type="text" wire:model="cedula" placeholder="Cédula" class="block w-full border rounded p-2" required>
-            <input type="text" wire:model="telefono" placeholder="Teléfono" class="block w-full border rounded p-2" required>
-            <input type="email" wire:model="correo" placeholder="Correo" class="block w-full border rounded p-2" required>
-            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Comenzar Trivia</button>
+<div class="f2r-container">
+    @if ($step === 1)
+        <div class="top-logo">
+            <img src="{{ asset('assets/mobil-logo.png') }}" alt="Logo" class="logo">
+            <p>Reto para vivir al máximo con Mobil</p>
+        </div>
+        <form wire:submit.prevent="submitLead" class="f2r-form">
+            <input type="text" wire:model="nombre" placeholder="Nombre" class="f2r-input" required>
+            <input type="text" wire:model="cedula" placeholder="Cédula" class="f2r-input" required>
+            <input type="text" wire:model="telefono" placeholder="Teléfono" class="f2r-input" required>
+            <input type="email" wire:model="correo" placeholder="Correo" class="f2r-input" required>
+            <button type="submit" class="f2r-btn f2r-btn-primary">Jugar</button>
         </form>
     @elseif($step === 2)
-        @if($showResult)
-            <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                <div class="bg-white p-8 rounded shadow text-center">
-                    @if($allCorrect)
-                        <h2 class="text-2xl font-bold mb-4">¡Felicidades!</h2>
-                        <p>Respondiste correctamente todas las preguntas.</p>
+        @if ($showResult)
+            <div class="f2r-modal-overlay">
+                <div class="f2r-modal">
+                    @if ($allCorrect)
+                        <h2 class="f2r-modal-title">¡Felicidades!</h2>
+                        <p class="f2r-modal-text">Respondiste correctamente todas las preguntas.</p>
                     @else
-                        <h2 class="text-2xl font-bold mb-4">Sigue intentando</h2>
-                        <p>No respondiste todas las preguntas correctamente.</p>
+                        <h2 class="f2r-modal-title">Sigue intentando</h2>
+                        <p class="f2r-modal-text">No respondiste todas las preguntas correctamente.</p>
                     @endif
-                    <button wire:click="restart" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Aceptar</button>
+                    <button wire:click="restart" class="f2r-btn f2r-btn-primary f2r-modal-btn">Aceptar</button>
                 </div>
             </div>
         @else
-            <div>
-                <h2 class="text-xl font-bold mb-4">Pregunta {{ $current + 1 }} de {{ count($questions) }}</h2>
-                <p class="mb-4">{{ $questions[$current]['question'] }}</p>
-                @foreach($questions[$current]['options'] as $key => $option)
-                    <button wire:click="answer('{{ $key }}')" class="block w-full mb-2 bg-gray-200 p-2 rounded">
-                        {{ $option }}
-                    </button>
-                @endforeach
+            <div class="f2r-question-block">
+                <div class="img-container-question">
+                    <img src="{{ asset('assets/' . $questions[$current]['category'] . '.png') }}"
+                        alt="Imagen de la pregunta" class="f2r-question-img">
+                    <p class="f2r-question-text">{{ $questions[$current]['question'] }}</p>
+                </div>
+                <div class="f2r-options">
+                    @foreach ($questions[$current]['options'] as $key => $option)
+                        <button wire:click="answer('{{ $key }}')" class="f2r-btn f2r-btn-option">
+                            {{ $option }}
+                        </button>
+                    @endforeach
+                </div>
             </div>
         @endif
     @endif
