@@ -1,0 +1,97 @@
+.resultados-body {
+    background: #f8fafc;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.resultados-title {
+    text-align: center;
+    margin-top: 30px;
+    color: #FE000C;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.resultados-table-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(60, 72, 88, 0.12);
+    padding: 32px 24px;
+    overflow-x: auto; /* Esto permite el scroll horizontal */
+}
+
+.resultados-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.05rem;
+    min-width: 600px;
+}
+
+.resultados-th, .resultados-td {
+    padding: 20px 5px;
+    text-align: left;
+}
+
+.resultados-th {
+    background: #FE000C;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 3px solid #FE000C;
+}
+
+.resultados-tr:nth-child(even) {
+    background: #e8eaf6;
+}
+
+.resultados-tr:nth-child(odd) {
+    background: #fff;
+}
+
+.resultados-td {
+    border-bottom: 1px solid #c5cae9;
+    color: #222;
+}
+
+.resultados-tr:hover {
+    background: #c5cae9;
+    transition: background 0.2s;
+}
+
+/* Responsive: solo scroll horizontal en móviles */
+@media (max-width: 700px) {
+    .resultados-table-container {
+        padding: 10px 2px;
+        border-radius: 8px;
+    }
+    .resultados-title {
+        font-size: 1.3rem;
+        margin-top: 18px;
+    }
+    .resultados-table {
+        font-size: 0.92rem;
+        min-width: 500px; /* Asegura que la tabla tenga un ancho mínimo para scroll */
+    }
+}
+
+@media (max-width: 500px) {
+    .resultados-table-container {
+        padding: 2px 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .resultados-title {
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+    .resultados-table {
+        font-size: 0.85rem;
+        min-width: 400px;
+    }
+    .resultados-th, .resultados-td {
+        padding: 10px 4px;
+    }
+}

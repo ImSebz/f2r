@@ -8,7 +8,7 @@ use App\Models\Lead;
 class LeadTrivia extends Component
 {
     public $step = 1;
-    public $nombre, $cedula, $telefono, $correo;
+    public $nombre, $telefono;
     public $questions = [];
     public $current = 0;
     public $answers = [];
@@ -17,9 +17,7 @@ class LeadTrivia extends Component
 
     protected $rules = [
         'nombre' => 'required',
-        'cedula' => 'required',
         'telefono' => 'required',
-        'correo' => 'required|email',
     ];
 
     public function mount()
@@ -107,9 +105,7 @@ class LeadTrivia extends Component
 
         Lead::create([
             'nombre' => $this->nombre,
-            'cedula' => $this->cedula,
             'telefono' => $this->telefono,
-            'correo' => $this->correo,
             'trivia_correct' => $this->allCorrect,
         ]);
 
@@ -118,7 +114,7 @@ class LeadTrivia extends Component
 
     public function restart()
     {
-        $this->reset(['step', 'nombre', 'cedula', 'telefono', 'correo', 'current', 'answers', 'showResult', 'allCorrect']);
+        $this->reset(['step', 'nombre', 'telefono', 'current', 'answers', 'showResult', 'allCorrect']);
         $this->step = 1;
     }
 

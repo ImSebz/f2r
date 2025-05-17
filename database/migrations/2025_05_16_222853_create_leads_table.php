@@ -10,9 +10,7 @@ return new class extends Migration
         Schema::create('leads', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->string('cedula');
             $table->string('telefono');
-            $table->string('correo');
             $table->boolean('trivia_correct')->nullable(); // true si respondió todo bien, false/null si no
             $table->timestamps();
         });

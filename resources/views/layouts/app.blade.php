@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>F2R</title>
     <link rel="stylesheet" href="{{ asset('css/trivia.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/resultados.css') }}">
     @livewireStyles
 </head>
 

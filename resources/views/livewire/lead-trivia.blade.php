@@ -6,9 +6,7 @@
         </div>
         <form wire:submit.prevent="submitLead" class="f2r-form">
             <input type="text" wire:model="nombre" placeholder="Nombre" class="f2r-input" required>
-            <input type="number" wire:model="cedula" placeholder="Cédula" class="f2r-input" required>
             <input type="number" wire:model="telefono" placeholder="Teléfono" class="f2r-input" required>
-            <input type="email" wire:model="correo" placeholder="Correo" class="f2r-input" required>
             <button type="submit" class="f2r-btn f2r-btn-primary">Jugar</button>
         </form>
     @elseif($step === 2)
